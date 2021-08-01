@@ -6,6 +6,8 @@ import * as productActions from '../../actions/product'
 import * as formActions from '../../actions/form'
 import ProductForm from '../../components/ProductForm'
 import SearchBox from '../SearchBox'
+import Product from '../../components/Product'
+import $ from 'jquery'
 
 class ProductBoard extends Component {
 
@@ -52,20 +54,25 @@ class ProductBoard extends Component {
         }
         return xhtml;
     }
+    onShowCreateModal = () => {
+        $('#mymodal').modal();
+    }
     render() {
         const { productList } = this.props
         const { deleteProduct, setProductEditing } = this.props.productActionCreators
         const { showForm } = this.props.formActionCreators
         return (
-            <div className="row">
-                <div className="col-md-12">
-                    <div className="">
-                        <SearchBox />
-                    </div>
-                    {
-                        this.renderForm()
-                    }
+            <div className="row justify-content-end my-3">
+                <div className="col">
+                    
                 </div>
+                <div className="col-auto">
+                    <SearchBox />
+                </div>
+                <Product modalId="mymodal" />
+                {
+                    this.renderForm()
+                }
                 <div className="col-md-12">
                     <ProductList
                         productList={productList}

@@ -12,14 +12,7 @@ class SearchBox extends Component {
     }
     render() {
         return (
-            <div className='row justify-content-end my-3'>
-                <div className='col'>
-
-                </div>
-                <div className='col-auto'>
-                    <input className="form-control mb-2  border-primary" type="text" name="searchText" placeholder="nhập từ khóa tìm kiếm" onChange={this.onChange} />
-                </div>
-            </div>
+            <input className="form-control mb-2  border-primary" type="text" name="searchText" placeholder="nhập từ khóa tìm kiếm" onChange={this.onChange} />
         )
     }
 }
