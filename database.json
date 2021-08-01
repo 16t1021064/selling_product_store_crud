@@ -1,0 +1,42 @@
+[
+   {
+      "id":"67",
+      "name":"12",
+      "price":"$0.00",
+      "description":null,
+      "quantity":null,
+      "photo":"https://cf.shopee.vn/file/e6c22e50e91f0a0325254ba990f6fb46",
+      "gallery":null,
+      "rating":2
+   },
+   {
+      "id":"3",
+      "name":"Áo phông",
+      "price":"$10,971.00",
+      "description":"Áo chống nắng nam nữ hàng đẹp chống tia UV thoáng mát cao cấp",
+      "quantity":"2",
+      "photo":"https://cf.shopee.vn/file/7e41e5dba5cb4bbc16a88cfe9cf413d1",
+      "gallery":"https://cf.shopee.vn/file/4d57564688ccdcb22ce47afebbec3774,https://cf.shopee.vn/file/7faeffe655e10db1757f8e7b9826dcbf,https://cf.shopee.vn/file/920f8a02511c30a7cf3fa17c04fb8180,https://cf.shopee.vn/file/a2ff3fee3473a776e1192d81646ca9a8,https://cf.shopee.vn/file/cc3c7dcaec56723ce0a486b26c356597,https://cf.shopee.vn/file/554759b15673a83fa915b02a42fb9b54",
+      "rating":3
+   },
+   {
+      "id":"2",
+      "name":"Quần đùi",
+      "price":"$120,000.00",
+      "description":"Quần đùi nam THE 1992 cartoon Quần short nam mặc nhà",
+      "quantity":"25",
+      "photo":"https://cf.shopee.vn/file/490bec944ef339a437513c380c039775",
+      "gallery":"https://cf.shopee.vn/file/25b31128d0941809ea93c1747b3fd294,https://cf.shopee.vn/file/f73e58210b7accb8154e5e0b05adf92d,https://cf.shopee.vn/file/f0de7fac0a60233be3b768511ccd0e0b,https://cf.shopee.vn/file/93f7f9994a9802b4dfd9fe6506c07eb3,https://cf.shopee.vn/file/6e85c0ec442c10ed55a09faa46de00da,https://cf.shopee.vn/file/4e2991508078261df0da78be9db13ca5",
+      "rating":2
+   },
+   {
+      "id":"1",
+      "name":"Zathin",
+      "price":"$10,000.00",
+      "description":"Áo Lót Nam Cotton Có Tay Mặc Ở Nhà , Áo Đông Xuân Nam Cộc Tay Bộ Đội Trắng Siêu Rẻ Siêu Đẹp",
+      "quantity":"20",
+      "photo":"https://cf.shopee.vn/file/3effb9b72a51c606076e82ea4fd3929a",
+      "gallery":"https://cf.shopee.vn/file/056ddc8439b88e5d69536ec4d124f3d0,https://cf.shopee.vn/file/d20c3fd8bd028912331e8c68d496df98,https://cf.shopee.vn/file/d5b86bc6e3110dea278d4ae6bb2005ba,https://cf.shopee.vn/file/964ba344b6e459d5168c829d2c7386a8,https://cf.shopee.vn/file/ee652239cb1704f2e4672939a2d3a808",
+      "rating":1
+   }
+]
