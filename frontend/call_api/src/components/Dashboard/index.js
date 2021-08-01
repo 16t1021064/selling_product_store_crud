@@ -10,7 +10,9 @@ export default class Dashboard extends Component {
             <>
                 <Nav />
                 <Header name={name} />
-                {children}
+                <div className="container">
+                    {children}
+                </div>
                 <Footer />
             </>
         )

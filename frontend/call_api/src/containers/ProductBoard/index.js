@@ -57,16 +57,16 @@ class ProductBoard extends Component {
         const { deleteProduct, setProductEditing } = this.props.productActionCreators
         const { showForm } = this.props.formActionCreators
         return (
-            <div className="row d-flex">
-                <div className="col-md-3">
-                    <div className="pt-10">
+            <div className="row">
+                <div className="col-md-12">
+                    <div className="">
                         <SearchBox />
                     </div>
                     {
                         this.renderForm()
                     }
                 </div>
-                <div className="col-md-9">
+                <div className="col-md-12">
                     <ProductList
                         productList={productList}
                         deleteProduct={deleteProduct}
