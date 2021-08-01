@@ -6,8 +6,6 @@ import * as productActions from '../../actions/product'
 import * as formActions from '../../actions/form'
 import ProductForm from '../../components/ProductForm'
 import SearchBox from '../SearchBox'
-import Product from '../../components/Product'
-import $ from 'jquery'
 
 class ProductBoard extends Component {
 
@@ -48,39 +46,41 @@ class ProductBoard extends Component {
         else {
             xhtml = (
                 <div className="text-center">
-                    <button className="btn btn-primary w-75" onClick={showForm}>Thêm sản phẩm</button>
+                    <button className="btn btn-secondary w-75" onClick={showForm}>Thêm sản phẩm</button>
                 </div>
             )
         }
         return xhtml;
-    }
-    onShowCreateModal = () => {
-        $('#mymodal').modal();
     }
     render() {
         const { productList } = this.props
         const { deleteProduct, setProductEditing } = this.props.productActionCreators
         const { showForm } = this.props.formActionCreators
         return (
-            <div className="row justify-content-end my-3">
-                <div className="col">
-                    
+            <div className="row my-3">
+                <div className="col-md-3">
+                    {
+                        this.renderForm()
+                    }
                 </div>
-                <div className="col-auto">
-                    <SearchBox />
-                </div>
-                <Product modalId="mymodal" />
-                {
-                    this.renderForm()
-                }
-                <div className="col-md-12">
-                    <ProductList
-                        productList={productList}
-                        deleteProduct={deleteProduct}
-                        setProductEditing={setProductEditing}
-                        showForm={showForm}
-                    />
-                </div>
+                <div className="col-md-9">
+                    <div className="row justify-content-end">
+                        <div className="col">
+
+                        </div>
+                        <div className="col-auto">
+                            <SearchBox />
+                        </div>
+
+                        <div className="col-md-12">
+                            <ProductList
+                                productList={productList}
+                                deleteProduct={deleteProduct}
+                                setProductEditing={setProductEditing}
+                                showForm={showForm}
+                            />
+                        </div>
+                    </div></div>
             </div>
         )
     }

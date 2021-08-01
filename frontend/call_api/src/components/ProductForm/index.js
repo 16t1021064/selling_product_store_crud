@@ -76,10 +76,9 @@ class ProductForm extends Component {
     render() {
         const { title } = this.props;
         return (
-            <>
-                <div className="col-md-3"></div>
-                <div className="login-container col-md-12">
-                    <h2><span className="badge badge-primary">{title}</span></h2>
+            <div className="row">
+                <div className="col-md-12">
+                    <h2>{title}</h2>
                     <div className="form-box">
                         <Form onSubmit={e => this.onSubmit(e)} ref={c => { this.form = c }}>
                             <div className="form-group">
@@ -136,9 +135,8 @@ class ProductForm extends Component {
                                 <button className="btn btn-info btn-warning " onClick={this.onCloseHandler}>Bỏ qua</button>
                             </div>
                         </Form>
-                    </div>
-                </div>
-            </>
+                    </div></div>
+            </div>
         )
     }
 }
